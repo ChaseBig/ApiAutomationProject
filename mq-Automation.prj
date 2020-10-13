@@ -6,7 +6,7 @@
    <UUID>ec801e16-fe94-4caf-92b2-4296a488e487</UUID>
    <migratedVersion>5.9.0</migratedVersion>
    <pageLoadTimeout>0</pageLoadTimeout>
-   <projectFileLocation>/Users/csmall/mq-chase/mq-Automation/mq-Automation.prj</projectFileLocation>
+   <projectFileLocation>/Users/csmall/ApiAutomationProject/mq-Automation.prj</projectFileLocation>
    <sourceContent>
       <sourceFolderList>
          <sourceFolderConfiguration>

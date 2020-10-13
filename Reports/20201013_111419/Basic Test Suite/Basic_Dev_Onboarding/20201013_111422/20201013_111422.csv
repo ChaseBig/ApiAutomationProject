@@ -1,0 +1,15 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Basic_Dev_Onboarding,,,,2020-10-13 11:15:13,2020-10-13 11:15:21,8.508s,PASSED
+,,,,,,,
+Test Cases/API Test Cases/Basic_Quickstart_Test_Case/Basic_Onboarding,,,,2020-10-13 11:15:13,2020-10-13 11:15:18,4.987s,PASSED
+"card_product_token = api_Basic_Onboarding.api_basic_onboarding.createCardProduct(start_date, card_product_name, payment_instrument, ecommerce, activate_upon_issue, atm)",,Create CardProduct,,2020-10-13 11:15:13,2020-10-13 11:15:16,2.395s,PASSED
+program_token = api_Basic_Onboarding.api_basic_onboarding.createCardFundingSource(program_name),,Create Program Funding Source,,2020-10-13 11:15:16,2020-10-13 11:15:16,0.666s,PASSED
+"user_token = api_Basic_Onboarding.api_basic_onboarding.createUser(first_name, last_name, active)",,Create Basic User,,2020-10-13 11:15:16,2020-10-13 11:15:17,0.614s,PASSED
+"card_token = api_Basic_Onboarding.api_basic_onboarding.createCard(user_token, card_product_token)",,Create Card,,2020-10-13 11:15:17,2020-10-13 11:15:18,1.143s,PASSED
+,,,,,,,
+Test Cases/API Test Cases/Basic_Quickstart_Test_Case/Dev Onboarding,,,,2020-10-13 11:15:18,2020-10-13 11:15:21,3.371s,PASSED
+api_Basic_Onboarding.api_basic_onboarding.pingService(),,,,2020-10-13 11:15:18,2020-10-13 11:15:19,0.539s,PASSED
+"card_product_token = api_Basic_Onboarding.api_basic_onboarding.createCardProduct(start_date, name, payment_instrument, ecommerce, activate_upon_issue, atm)",,,,2020-10-13 11:15:19,2020-10-13 11:15:19,0.671s,PASSED
+program_token = api_Basic_Onboarding.api_basic_onboarding.createCardFundingSource(program_name),,,,2020-10-13 11:15:19,2020-10-13 11:15:20,0.512s,PASSED
+"user_token = api_Basic_Onboarding.api_basic_onboarding.createUser(first_name, last_name, active)",,,,2020-10-13 11:15:20,2020-10-13 11:15:20,0.569s,PASSED
+"card_token = api_Basic_Onboarding.api_basic_onboarding.createCard(user_token, card_product_token)",,,,2020-10-13 11:15:20,2020-10-13 11:15:21,0.945s,PASSED
