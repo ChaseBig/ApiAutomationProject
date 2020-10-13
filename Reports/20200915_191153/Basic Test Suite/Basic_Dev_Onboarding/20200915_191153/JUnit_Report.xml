@@ -1,0 +1,1298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Basic_Dev_Onboarding" time="9.683" tests="2" failures="0" errors="0">
+   <testsuite name="Basic_Dev_Onboarding" tests="2" failures="0" errors="0" time="9.683" timestamp="2020-09-15 19:12:20" hostname="csmall - csmall-mbp" id="Test Suites/Basic Test Suite/Basic_Dev_Onboarding">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="/Users/csmall/mq-chase/Reports/20200915_191153/Basic Test Suite/Basic_Dev_Onboarding/20200915_191153"/>
+         <property name="logFiles" value="/Users/csmall/mq-chase/Reports/20200915_191153/Basic Test Suite/Basic_Dev_Onboarding/20200915_191153/execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="csmall - csmall-mbp"/>
+         <property name="hostAddress" value="192.168.1.45"/>
+         <property name="os" value="Mac OS X 64bit"/>
+         <property name="katalonVersion" value="null.null"/>
+      </properties>
+      <testcase name="Test Cases/API Test Cases/Basic_Quickstart_Test_Case/Basic_Onboarding" time="6.005" classname="Test Cases/API Test Cases/Basic_Quickstart_Test_Case/Basic_Onboarding" status="PASSED">
+         <system-out><![CDATA[2020-09-15 19:12:20 - [TEST_CASE][PASSED] - Test Cases/API Test Cases/Basic_Quickstart_Test_Case/Basic_Onboarding: Test Cases/API Test Cases/Basic_Quickstart_Test_Case/Basic_Onboarding
+
+2020-09-15 19:12:20 - [TEST_STEP][PASSED] - card_product_token = api_Basic_Onboarding.api_basic_onboarding.createCardProduct(start_date, card_product_name, payment_instrument, ecommerce, activate_upon_issue, atm): api_Basic_Onboarding.api_basic_onboarding.createCardProduct is PASSED
+
+2020-09-15 19:12:22 - [MESSAGE][INFO] - HAR: /Users/csmall/mq-chase/Reports/20200915_191153/Basic Test Suite/Basic_Dev_Onboarding/20200915_191153/requests/main/0.har
+
+2020-09-15 19:12:23 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+2020-09-15 19:12:23 - [TEST_STEP][PASSED] - log = new com.kms.katalon.core.logging.KeywordLogger(): null
+
+2020-09-15 19:12:23 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+2020-09-15 19:12:23 - [TEST_STEP][PASSED] - println(restUrl.toString()): null
+
+2020-09-15 19:12:23 - [TEST_STEP][PASSED] - println(httpBody.toString()): null
+
+2020-09-15 19:12:23 - [TEST_STEP][PASSED] - log.logInfo("-------> Request Url= " + restUrl.toString()): -------> Request Url= https://sandbox-api.marqeta.com/v3/cardproducts
+
+2020-09-15 19:12:23 - [MESSAGE][INFO] - -------> Request Url= https://sandbox-api.marqeta.com/v3/cardproducts
+
+2020-09-15 19:12:23 - [TEST_STEP][PASSED] - log.logInfo("-------> Request Body= " + httpBody.toString()): -------> Request Body= {
+  "start_date": "2020-09-10",
+  "name": "Example Card Product",
+  "config": {
+    "fulfillment": {
+      "payment_instrument":"VIRTUAL_PAN"
+     },
+    "poi": {
+      "ecommerce": true,
+      "atm": "true"
+    },
+    "card_life_cycle": {
+      "activate_upon_issue": true
+    }
+  }
+}
+
+2020-09-15 19:12:23 - [MESSAGE][INFO] - -------> Request Body= {
+  "start_date": "2020-09-10",
+  "name": "Example Card Product",
+  "config": {
+    "fulfillment": {
+      "payment_instrument":"VIRTUAL_PAN"
+     },
+    "poi": {
+      "ecommerce": true,
+      "atm": "true"
+    },
+    "card_life_cycle": {
+      "activate_upon_issue": true
+    }
+  }
+}
+
+2020-09-15 19:12:23 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+2020-09-15 19:12:23 - [TEST_STEP][PASSED] - println(responseBodyContent.toString()): null
+
+2020-09-15 19:12:23 - [TEST_STEP][PASSED] - log.logInfo("-------> Response Body= " + responseBodyContent.toString()): -------> Response Body= {
+  "token" : "4b1d5d6e-56b5-42f8-a6de-9be5797f45a5",
+  "name" : "Example Card Product",
+  "active" : true,
+  "start_date" : "2020-09-10",
+  "config" : {
+    "poi" : {
+      "other" : {
+        "allow" : true,
+        "card_presence_required" : false,
+        "cardholder_presence_required" : false
+      },
+      "ecommerce" : true,
+      "atm" : true
+    },
+    "transaction_controls" : {
+      "accepted_countries_token" : "accept_us_only",
+      "always_require_pin" : false,
+      "always_require_icc" : false,
+      "allow_gpa_auth" : true,
+      "require_card_not_present_card_security_code" : false,
+      "allow_mcc_group_authorization_controls" : true,
+      "allow_first_pin_set_via_financial_transaction" : false,
+      "ignore_card_suspended_state" : false,
+      "allow_chip_fallback" : true,
+      "allow_network_load" : false,
+      "allow_network_load_card_activation" : false,
+      "allow_quasi_cash" : false,
+      "enable_partial_auth_approval" : true,
+      "address_verification" : {
+        "av_messages" : {
+          "validate" : true,
+          "decline_on_address_number_mismatch" : false,
+          "decline_on_postal_code_mismatch" : true
+        },
+        "auth_messages" : {
+          "validate" : true,
+          "decline_on_address_number_mismatch" : false,
+          "decline_on_postal_code_mismatch" : false
+        }
+      }
+    },
+    "selective_auth" : {
+      "sa_mode" : 1,
+      "enable_regex_search_chain" : false,
+      "dmd_location_sensitivity" : 0
+    },
+    "special" : {
+      "merchant_on_boarding" : false
+    },
+    "card_life_cycle" : {
+      "activate_upon_issue" : true,
+      "expiration_offset" : {
+        "unit" : "YEARS",
+        "value" : 4
+      },
+      "card_service_code" : 101,
+      "update_expiration_upon_activation" : false
+    },
+    "clearing_and_settlement" : {
+      "overdraft_destination" : "GPA"
+    },
+    "jit_funding" : {
+      "paymentcard_funding_source" : {
+        "enabled" : false,
+        "refunds_destination" : ""
+      },
+      "programgateway_funding_source" : {
+        "enabled" : false,
+        "funding_source_token" : "",
+        "refunds_destination" : "",
+        "always_fund" : true
+      },
+      "program_funding_source" : {
+        "enabled" : false,
+        "funding_source_token" : "",
+        "refunds_destination" : ""
+      }
+    },
+    "digital_wallet_tokenization" : {
+      "provisioning_controls" : {
+        "manual_entry" : {
+          "enabled" : false,
+          "address_verification" : {
+            "validate" : true
+          }
+        },
+        "wallet_provider_card_on_file" : {
+          "enabled" : false,
+          "address_verification" : {
+            "validate" : true
+          }
+        },
+        "in_app_provisioning" : {
+          "enabled" : false,
+          "address_verification" : {
+            "validate" : true
+          }
+        }
+      }
+    },
+    "fulfillment" : {
+      "payment_instrument" : "VIRTUAL_PAN",
+      "package_id" : "0",
+      "all_zero_card_security_code" : false,
+      "bin_prefix" : "111111",
+      "bulk_ship" : false,
+      "pan_length" : "16",
+      "fulfillment_provider" : "PERFECTPLASTIC",
+      "allow_card_creation" : true,
+      "uppercase_name_lines" : true,
+      "enable_offline_pin" : false
+    }
+  },
+  "created_time" : "2020-09-16T00:12:22Z",
+  "last_modified_time" : "2020-09-16T00:12:22Z"
+}
+
+2020-09-15 19:12:23 - [MESSAGE][INFO] - -------> Response Body= {
+  "token" : "4b1d5d6e-56b5-42f8-a6de-9be5797f45a5",
+  "name" : "Example Card Product",
+  "active" : true,
+  "start_date" : "2020-09-10",
+  "config" : {
+    "poi" : {
+      "other" : {
+        "allow" : true,
+        "card_presence_required" : false,
+        "cardholder_presence_required" : false
+      },
+      "ecommerce" : true,
+      "atm" : true
+    },
+    "transaction_controls" : {
+      "accepted_countries_token" : "accept_us_only",
+      "always_require_pin" : false,
+      "always_require_icc" : false,
+      "allow_gpa_auth" : true,
+      "require_card_not_present_card_security_code" : false,
+      "allow_mcc_group_authorization_controls" : true,
+      "allow_first_pin_set_via_financial_transaction" : false,
+      "ignore_card_suspended_state" : false,
+      "allow_chip_fallback" : true,
+      "allow_network_load" : false,
+      "allow_network_load_card_activation" : false,
+      "allow_quasi_cash" : false,
+      "enable_partial_auth_approval" : true,
+      "address_verification" : {
+        "av_messages" : {
+          "validate" : true,
+          "decline_on_address_number_mismatch" : false,
+          "decline_on_postal_code_mismatch" : true
+        },
+        "auth_messages" : {
+          "validate" : true,
+          "decline_on_address_number_mismatch" : false,
+          "decline_on_postal_code_mismatch" : false
+        }
+      }
+    },
+    "selective_auth" : {
+      "sa_mode" : 1,
+      "enable_regex_search_chain" : false,
+      "dmd_location_sensitivity" : 0
+    },
+    "special" : {
+      "merchant_on_boarding" : false
+    },
+    "card_life_cycle" : {
+      "activate_upon_issue" : true,
+      "expiration_offset" : {
+        "unit" : "YEARS",
+        "value" : 4
+      },
+      "card_service_code" : 101,
+      "update_expiration_upon_activation" : false
+    },
+    "clearing_and_settlement" : {
+      "overdraft_destination" : "GPA"
+    },
+    "jit_funding" : {
+      "paymentcard_funding_source" : {
+        "enabled" : false,
+        "refunds_destination" : ""
+      },
+      "programgateway_funding_source" : {
+        "enabled" : false,
+        "funding_source_token" : "",
+        "refunds_destination" : "",
+        "always_fund" : true
+      },
+      "program_funding_source" : {
+        "enabled" : false,
+        "funding_source_token" : "",
+        "refunds_destination" : ""
+      }
+    },
+    "digital_wallet_tokenization" : {
+      "provisioning_controls" : {
+        "manual_entry" : {
+          "enabled" : false,
+          "address_verification" : {
+            "validate" : true
+          }
+        },
+        "wallet_provider_card_on_file" : {
+          "enabled" : false,
+          "address_verification" : {
+            "validate" : true
+          }
+        },
+        "in_app_provisioning" : {
+          "enabled" : false,
+          "address_verification" : {
+            "validate" : true
+          }
+        }
+      }
+    },
+    "fulfillment" : {
+      "payment_instrument" : "VIRTUAL_PAN",
+      "package_id" : "0",
+      "all_zero_card_security_code" : false,
+      "bin_prefix" : "111111",
+      "bulk_ship" : false,
+      "pan_length" : "16",
+      "fulfillment_provider" : "PERFECTPLASTIC",
+      "allow_card_creation" : true,
+      "uppercase_name_lines" : true,
+      "enable_offline_pin" : false
+    }
+  },
+  "created_time" : "2020-09-16T00:12:22Z",
+  "last_modified_time" : "2020-09-16T00:12:22Z"
+}
+
+2020-09-15 19:12:23 - [TEST_STEP][PASSED] - jsonSlurper = new groovy.json.JsonSlurper(): null
+
+2020-09-15 19:12:23 - [TEST_STEP][PASSED] - jsonResponse = jsonSlurper.parseText(response.getResponseText()): null
+
+2020-09-15 19:12:23 - [TEST_STEP][PASSED] - assert token != null: null
+
+2020-09-15 19:12:23 - [TEST_STEP][PASSED] - println(token): null
+
+2020-09-15 19:12:23 - [TEST_STEP][PASSED] - card_product_token = token: null
+
+2020-09-15 19:12:23 - [TEST_STEP][PASSED] - log.logInfo("-----> card_product_token = " + card_product_token): -----> card_product_token = 4b1d5d6e-56b5-42f8-a6de-9be5797f45a5
+
+2020-09-15 19:12:23 - [MESSAGE][INFO] - -----> card_product_token = 4b1d5d6e-56b5-42f8-a6de-9be5797f45a5
+
+2020-09-15 19:12:23 - [TEST_STEP][PASSED] - card_product_token = card_product_token: null
+
+2020-09-15 19:12:23 - [TEST_STEP][PASSED] - log.logInfo("----> GlobalVariable card_product_token = " + card_product_token): ----> GlobalVariable card_product_token = 4b1d5d6e-56b5-42f8-a6de-9be5797f45a5
+
+2020-09-15 19:12:23 - [MESSAGE][INFO] - ----> GlobalVariable card_product_token = 4b1d5d6e-56b5-42f8-a6de-9be5797f45a5
+
+2020-09-15 19:12:23 - [TEST_STEP][PASSED] - assert response.getStatusCode() == 201: null
+
+2020-09-15 19:12:23 - [MESSAGE][PASSED] - Verify response successfully
+
+2020-09-15 19:12:23 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+2020-09-15 19:12:23 - [MESSAGE][INFO] - -----> card_product_token = 4b1d5d6e-56b5-42f8-a6de-9be5797f45a5
+
+2020-09-15 19:12:23 - [MESSAGE][INFO] - ----> GlobalVariable card_product_token = 4b1d5d6e-56b5-42f8-a6de-9be5797f45a5
+
+2020-09-15 19:12:23 - [MESSAGE][PASSED] - api_Basic_Onboarding.api_basic_onboarding.createCardProduct is PASSED
+
+2020-09-15 19:12:23 - [TEST_STEP][PASSED] - program_token = api_Basic_Onboarding.api_basic_onboarding.createCardFundingSource(program_name): api_Basic_Onboarding.api_basic_onboarding.createCardFundingSource is PASSED
+
+2020-09-15 19:12:23 - [MESSAGE][INFO] - HAR: /Users/csmall/mq-chase/Reports/20200915_191153/Basic Test Suite/Basic_Dev_Onboarding/20200915_191153/requests/main/1.har
+
+2020-09-15 19:12:23 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+2020-09-15 19:12:23 - [TEST_STEP][PASSED] - log = new com.kms.katalon.core.logging.KeywordLogger(): null
+
+2020-09-15 19:12:23 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+2020-09-15 19:12:23 - [TEST_STEP][PASSED] - println(restUrl.toString()): null
+
+2020-09-15 19:12:23 - [TEST_STEP][PASSED] - println(httpBody.toString()): null
+
+2020-09-15 19:12:23 - [TEST_STEP][PASSED] - log.logInfo("-------> Request Url= " + restUrl.toString()): -------> Request Url= https://sandbox-api.marqeta.com/v3/fundingsources/program
+
+2020-09-15 19:12:23 - [MESSAGE][INFO] - -------> Request Url= https://sandbox-api.marqeta.com/v3/fundingsources/program
+
+2020-09-15 19:12:23 - [TEST_STEP][PASSED] - log.logInfo("-------> Request Body= " + httpBody.toString()): -------> Request Body= {
+  "name": "Program Funding"
+}
+
+2020-09-15 19:12:23 - [MESSAGE][INFO] - -------> Request Body= {
+  "name": "Program Funding"
+}
+
+2020-09-15 19:12:23 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+2020-09-15 19:12:23 - [TEST_STEP][PASSED] - println(responseBodyContent.toString()): null
+
+2020-09-15 19:12:23 - [TEST_STEP][PASSED] - log.logInfo("-------> Response Body= " + responseBodyContent.toString()): -------> Response Body= {
+  "name" : "Program Funding",
+  "active" : true,
+  "token" : "3cd50dba-4bd2-4547-8d95-02e35e742a8b",
+  "created_time" : "2020-09-16T00:12:23Z",
+  "last_modified_time" : "2020-09-16T00:12:23Z",
+  "account" : "12.003.001.000000"
+}
+
+2020-09-15 19:12:23 - [MESSAGE][INFO] - -------> Response Body= {
+  "name" : "Program Funding",
+  "active" : true,
+  "token" : "3cd50dba-4bd2-4547-8d95-02e35e742a8b",
+  "created_time" : "2020-09-16T00:12:23Z",
+  "last_modified_time" : "2020-09-16T00:12:23Z",
+  "account" : "12.003.001.000000"
+}
+
+2020-09-15 19:12:23 - [TEST_STEP][PASSED] - jsonSlurper = new groovy.json.JsonSlurper(): null
+
+2020-09-15 19:12:23 - [TEST_STEP][PASSED] - jsonResponse = jsonSlurper.parseText(response.getResponseText()): null
+
+2020-09-15 19:12:23 - [TEST_STEP][PASSED] - assert token != null: null
+
+2020-09-15 19:12:23 - [TEST_STEP][PASSED] - println(token): null
+
+2020-09-15 19:12:23 - [TEST_STEP][PASSED] - funding_token = token: null
+
+2020-09-15 19:12:23 - [TEST_STEP][PASSED] - log.logInfo("-----> funding_token = " + funding_token): -----> funding_token = 3cd50dba-4bd2-4547-8d95-02e35e742a8b
+
+2020-09-15 19:12:23 - [MESSAGE][INFO] - -----> funding_token = 3cd50dba-4bd2-4547-8d95-02e35e742a8b
+
+2020-09-15 19:12:23 - [TEST_STEP][PASSED] - funding_token = funding_token: null
+
+2020-09-15 19:12:23 - [TEST_STEP][PASSED] - log.logInfo("----> GlobalVariable funding_token = " + funding_token): ----> GlobalVariable funding_token = 3cd50dba-4bd2-4547-8d95-02e35e742a8b
+
+2020-09-15 19:12:23 - [MESSAGE][INFO] - ----> GlobalVariable funding_token = 3cd50dba-4bd2-4547-8d95-02e35e742a8b
+
+2020-09-15 19:12:23 - [TEST_STEP][PASSED] - assert response.getStatusCode() == 201: null
+
+2020-09-15 19:12:23 - [MESSAGE][PASSED] - Verify response successfully
+
+2020-09-15 19:12:23 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+2020-09-15 19:12:23 - [MESSAGE][INFO] - -----> funding_token = 3cd50dba-4bd2-4547-8d95-02e35e742a8b
+
+2020-09-15 19:12:23 - [MESSAGE][INFO] - ----> GlobalVariable card_product_token = 3cd50dba-4bd2-4547-8d95-02e35e742a8b
+
+2020-09-15 19:12:23 - [MESSAGE][PASSED] - api_Basic_Onboarding.api_basic_onboarding.createCardFundingSource is PASSED
+
+2020-09-15 19:12:23 - [TEST_STEP][PASSED] - user_token = api_Basic_Onboarding.api_basic_onboarding.createUser(first_name, last_name, active): api_Basic_Onboarding.api_basic_onboarding.createUser is PASSED
+
+2020-09-15 19:12:24 - [MESSAGE][INFO] - HAR: /Users/csmall/mq-chase/Reports/20200915_191153/Basic Test Suite/Basic_Dev_Onboarding/20200915_191153/requests/main/2.har
+
+2020-09-15 19:12:25 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+2020-09-15 19:12:25 - [TEST_STEP][PASSED] - log = new com.kms.katalon.core.logging.KeywordLogger(): null
+
+2020-09-15 19:12:25 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+2020-09-15 19:12:25 - [TEST_STEP][PASSED] - println(restUrl.toString()): null
+
+2020-09-15 19:12:25 - [TEST_STEP][PASSED] - println(httpBody.toString()): null
+
+2020-09-15 19:12:25 - [TEST_STEP][PASSED] - log.logInfo("-------> Request Url= " + restUrl.toString()): -------> Request Url= https://sandbox-api.marqeta.com/v3/users
+
+2020-09-15 19:12:25 - [MESSAGE][INFO] - -------> Request Url= https://sandbox-api.marqeta.com/v3/users
+
+2020-09-15 19:12:25 - [TEST_STEP][PASSED] - log.logInfo("-------> Request Body= " + httpBody.toString()): -------> Request Body= {
+    "first_name": "ChaseTestFirstName",
+    "last_name": "ChaseTestLastName",
+    "active": true
+}
+
+2020-09-15 19:12:25 - [MESSAGE][INFO] - -------> Request Body= {
+    "first_name": "ChaseTestFirstName",
+    "last_name": "ChaseTestLastName",
+    "active": true
+}
+
+2020-09-15 19:12:25 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+2020-09-15 19:12:25 - [TEST_STEP][PASSED] - println(responseBodyContent.toString()): null
+
+2020-09-15 19:12:25 - [TEST_STEP][PASSED] - log.logInfo("-------> Response Body= " + responseBodyContent.toString()): -------> Response Body= {
+  "token" : "ecbccc77-2066-4113-b511-a9fc3a91c32f",
+  "active" : true,
+  "first_name" : "ChaseTestFirstName",
+  "last_name" : "ChaseTestLastName",
+  "uses_parent_account" : false,
+  "corporate_card_holder" : false,
+  "created_time" : "2020-09-16T00:12:24Z",
+  "last_modified_time" : "2020-09-16T00:12:24Z",
+  "metadata" : { },
+  "account_holder_group_token" : "DEFAULT_AHG",
+  "status" : "ACTIVE",
+  "deposit_account" : {
+    "token" : "ede2468b-c82e-4755-a126-abd5493d2a55",
+    "account_number" : "40013372028257610",
+    "routing_number" : "293748000",
+    "allow_immediate_credit" : false
+  }
+}
+
+2020-09-15 19:12:25 - [MESSAGE][INFO] - -------> Response Body= {
+  "token" : "ecbccc77-2066-4113-b511-a9fc3a91c32f",
+  "active" : true,
+  "first_name" : "ChaseTestFirstName",
+  "last_name" : "ChaseTestLastName",
+  "uses_parent_account" : false,
+  "corporate_card_holder" : false,
+  "created_time" : "2020-09-16T00:12:24Z",
+  "last_modified_time" : "2020-09-16T00:12:24Z",
+  "metadata" : { },
+  "account_holder_group_token" : "DEFAULT_AHG",
+  "status" : "ACTIVE",
+  "deposit_account" : {
+    "token" : "ede2468b-c82e-4755-a126-abd5493d2a55",
+    "account_number" : "40013372028257610",
+    "routing_number" : "293748000",
+    "allow_immediate_credit" : false
+  }
+}
+
+2020-09-15 19:12:25 - [TEST_STEP][PASSED] - jsonSlurper = new groovy.json.JsonSlurper(): null
+
+2020-09-15 19:12:25 - [TEST_STEP][PASSED] - jsonResponse = jsonSlurper.parseText(response.getResponseText()): null
+
+2020-09-15 19:12:25 - [TEST_STEP][PASSED] - assert token != null: null
+
+2020-09-15 19:12:25 - [TEST_STEP][PASSED] - println(token): null
+
+2020-09-15 19:12:25 - [TEST_STEP][PASSED] - user_token = token: null
+
+2020-09-15 19:12:25 - [TEST_STEP][PASSED] - log.logInfo("-----> user_token = " + user_token): -----> user_token = ecbccc77-2066-4113-b511-a9fc3a91c32f
+
+2020-09-15 19:12:25 - [MESSAGE][INFO] - -----> user_token = ecbccc77-2066-4113-b511-a9fc3a91c32f
+
+2020-09-15 19:12:25 - [TEST_STEP][PASSED] - user_token = user_token: null
+
+2020-09-15 19:12:25 - [TEST_STEP][PASSED] - log.logInfo("----> GlobalVariable user_token = " + user_token): ----> GlobalVariable user_token = ecbccc77-2066-4113-b511-a9fc3a91c32f
+
+2020-09-15 19:12:25 - [MESSAGE][INFO] - ----> GlobalVariable user_token = ecbccc77-2066-4113-b511-a9fc3a91c32f
+
+2020-09-15 19:12:25 - [TEST_STEP][PASSED] - assert response.getStatusCode() == 201: null
+
+2020-09-15 19:12:25 - [MESSAGE][PASSED] - Verify response successfully
+
+2020-09-15 19:12:25 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+2020-09-15 19:12:25 - [MESSAGE][INFO] - -----> user_token = ecbccc77-2066-4113-b511-a9fc3a91c32f
+
+2020-09-15 19:12:25 - [MESSAGE][INFO] - ----> GlobalVariable user_token = ecbccc77-2066-4113-b511-a9fc3a91c32f
+
+2020-09-15 19:12:25 - [MESSAGE][PASSED] - api_Basic_Onboarding.api_basic_onboarding.createUser is PASSED
+
+2020-09-15 19:12:25 - [TEST_STEP][PASSED] - card_token = api_Basic_Onboarding.api_basic_onboarding.createCard(user_token, card_product_token): api_Basic_Onboarding.api_basic_onboarding.createCard is PASSED
+
+2020-09-15 19:12:26 - [MESSAGE][INFO] - HAR: /Users/csmall/mq-chase/Reports/20200915_191153/Basic Test Suite/Basic_Dev_Onboarding/20200915_191153/requests/main/3.har
+
+2020-09-15 19:12:26 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+2020-09-15 19:12:26 - [TEST_STEP][PASSED] - log = new com.kms.katalon.core.logging.KeywordLogger(): null
+
+2020-09-15 19:12:26 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+2020-09-15 19:12:26 - [TEST_STEP][PASSED] - println(restUrl.toString()): null
+
+2020-09-15 19:12:26 - [TEST_STEP][PASSED] - println(httpBody.toString()): null
+
+2020-09-15 19:12:26 - [TEST_STEP][PASSED] - log.logInfo("-------> Request Url= " + restUrl.toString()): -------> Request Url= https://sandbox-api.marqeta.com/v3/cards
+
+2020-09-15 19:12:26 - [MESSAGE][INFO] - -------> Request Url= https://sandbox-api.marqeta.com/v3/cards
+
+2020-09-15 19:12:26 - [TEST_STEP][PASSED] - log.logInfo("-------> Request Body= " + httpBody.toString()): -------> Request Body= {
+  "user_token": "ecbccc77-2066-4113-b511-a9fc3a91c32f",
+  "card_product_token": "4b1d5d6e-56b5-42f8-a6de-9be5797f45a5"
+}
+
+2020-09-15 19:12:26 - [MESSAGE][INFO] - -------> Request Body= {
+  "user_token": "ecbccc77-2066-4113-b511-a9fc3a91c32f",
+  "card_product_token": "4b1d5d6e-56b5-42f8-a6de-9be5797f45a5"
+}
+
+2020-09-15 19:12:26 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+2020-09-15 19:12:26 - [TEST_STEP][PASSED] - println(responseBodyContent.toString()): null
+
+2020-09-15 19:12:26 - [TEST_STEP][PASSED] - log.logInfo("-------> Response Body= " + responseBodyContent.toString()): -------> Response Body= {
+  "created_time" : "2020-09-16T00:12:25Z",
+  "last_modified_time" : "2020-09-16T00:12:25Z",
+  "token" : "44b70e28-e93c-42c9-b4eb-1dbb628c0afb",
+  "user_token" : "ecbccc77-2066-4113-b511-a9fc3a91c32f",
+  "card_product_token" : "4b1d5d6e-56b5-42f8-a6de-9be5797f45a5",
+  "last_four" : "6135",
+  "pan" : "111111______6135",
+  "expiration" : "0924",
+  "expiration_time" : "2024-09-30T23:59:59Z",
+  "barcode" : "24847614185484091400",
+  "pin_is_set" : false,
+  "state" : "ACTIVE",
+  "state_reason" : "New card activated",
+  "fulfillment_status" : "ISSUED",
+  "instrument_type" : "VIRTUAL_PAN",
+  "expedite" : false,
+  "metadata" : { }
+}
+
+2020-09-15 19:12:26 - [MESSAGE][INFO] - -------> Response Body= {
+  "created_time" : "2020-09-16T00:12:25Z",
+  "last_modified_time" : "2020-09-16T00:12:25Z",
+  "token" : "44b70e28-e93c-42c9-b4eb-1dbb628c0afb",
+  "user_token" : "ecbccc77-2066-4113-b511-a9fc3a91c32f",
+  "card_product_token" : "4b1d5d6e-56b5-42f8-a6de-9be5797f45a5",
+  "last_four" : "6135",
+  "pan" : "111111______6135",
+  "expiration" : "0924",
+  "expiration_time" : "2024-09-30T23:59:59Z",
+  "barcode" : "24847614185484091400",
+  "pin_is_set" : false,
+  "state" : "ACTIVE",
+  "state_reason" : "New card activated",
+  "fulfillment_status" : "ISSUED",
+  "instrument_type" : "VIRTUAL_PAN",
+  "expedite" : false,
+  "metadata" : { }
+}
+
+2020-09-15 19:12:26 - [TEST_STEP][PASSED] - jsonSlurper = new groovy.json.JsonSlurper(): null
+
+2020-09-15 19:12:26 - [TEST_STEP][PASSED] - jsonResponse = jsonSlurper.parseText(response.getResponseText()): null
+
+2020-09-15 19:12:26 - [TEST_STEP][PASSED] - assert token != null: null
+
+2020-09-15 19:12:26 - [TEST_STEP][PASSED] - println(token): null
+
+2020-09-15 19:12:26 - [TEST_STEP][PASSED] - card_token = token: null
+
+2020-09-15 19:12:26 - [TEST_STEP][PASSED] - log.logInfo("-----> card_token = " + card_token): -----> card_token = 44b70e28-e93c-42c9-b4eb-1dbb628c0afb
+
+2020-09-15 19:12:26 - [MESSAGE][INFO] - -----> card_token = 44b70e28-e93c-42c9-b4eb-1dbb628c0afb
+
+2020-09-15 19:12:26 - [TEST_STEP][PASSED] - card_token = card_token: null
+
+2020-09-15 19:12:26 - [TEST_STEP][PASSED] - log.logInfo("----> GlobalVariable card_token = " + card_token): ----> GlobalVariable card_token = 44b70e28-e93c-42c9-b4eb-1dbb628c0afb
+
+2020-09-15 19:12:26 - [MESSAGE][INFO] - ----> GlobalVariable card_token = 44b70e28-e93c-42c9-b4eb-1dbb628c0afb
+
+2020-09-15 19:12:26 - [TEST_STEP][PASSED] - assert response.getStatusCode() == 201: null
+
+2020-09-15 19:12:26 - [MESSAGE][PASSED] - Verify response successfully
+
+2020-09-15 19:12:26 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+2020-09-15 19:12:26 - [MESSAGE][INFO] - -----> card_token = 44b70e28-e93c-42c9-b4eb-1dbb628c0afb
+
+2020-09-15 19:12:26 - [MESSAGE][INFO] - ----> GlobalVariable card_token = 44b70e28-e93c-42c9-b4eb-1dbb628c0afb
+
+2020-09-15 19:12:26 - [MESSAGE][PASSED] - api_Basic_Onboarding.api_basic_onboarding.createCard is PASSED]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/API Test Cases/Basic_Quickstart_Test_Case/Dev Onboarding" time="3.369" classname="Test Cases/API Test Cases/Basic_Quickstart_Test_Case/Dev Onboarding" status="PASSED">
+         <system-out><![CDATA[2020-09-15 19:12:26 - [TEST_CASE][PASSED] - Test Cases/API Test Cases/Basic_Quickstart_Test_Case/Dev Onboarding: Test Cases/API Test Cases/Basic_Quickstart_Test_Case/Dev Onboarding
+
+2020-09-15 19:12:26 - [TEST_STEP][PASSED] - api_Basic_Onboarding.api_basic_onboarding.pingService(): api_Basic_Onboarding.api_basic_onboarding.pingService is PASSED
+
+2020-09-15 19:12:26 - [MESSAGE][INFO] - HAR: /Users/csmall/mq-chase/Reports/20200915_191153/Basic Test Suite/Basic_Dev_Onboarding/20200915_191153/requests/main/4.har
+
+2020-09-15 19:12:26 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+2020-09-15 19:12:26 - [TEST_STEP][PASSED] - log = new com.kms.katalon.core.logging.KeywordLogger(): null
+
+2020-09-15 19:12:26 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+2020-09-15 19:12:26 - [TEST_STEP][PASSED] - println(restUrl.toString()): null
+
+2020-09-15 19:12:26 - [TEST_STEP][PASSED] - log.logInfo("-------> Request Url= " + restUrl.toString()): -------> Request Url= https://sandbox-api.marqeta.com/v3/ping
+
+2020-09-15 19:12:26 - [MESSAGE][INFO] - -------> Request Url= https://sandbox-api.marqeta.com/v3/ping
+
+2020-09-15 19:12:26 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+2020-09-15 19:12:26 - [TEST_STEP][PASSED] - println(responseBodyContent.toString()): null
+
+2020-09-15 19:12:26 - [TEST_STEP][PASSED] - log.logInfo("-------> Response Body= " + responseBodyContent.toString()): -------> Response Body= {"success":true,"version":"rel-20.7.2","revision":"18802b7166c8741dbc7a42b6a4980f6d7f78b6c9","timestamp":"Tue Jul 21 03:46:38 UTC 2020","env":"sandbox","id":"i-0e0a4a9bc40f8d05d:us-east-1a:10.128.19.176"}
+
+2020-09-15 19:12:26 - [MESSAGE][INFO] - -------> Response Body= {"success":true,"version":"rel-20.7.2","revision":"18802b7166c8741dbc7a42b6a4980f6d7f78b6c9","timestamp":"Tue Jul 21 03:46:38 UTC 2020","env":"sandbox","id":"i-0e0a4a9bc40f8d05d:us-east-1a:10.128.19.176"}
+
+2020-09-15 19:12:26 - [TEST_STEP][PASSED] - jsonSlurper = new groovy.json.JsonSlurper(): null
+
+2020-09-15 19:12:26 - [TEST_STEP][PASSED] - jsonResponse = jsonSlurper.parseText(response.getResponseText()): null
+
+2020-09-15 19:12:26 - [TEST_STEP][PASSED] - assert success != null: null
+
+2020-09-15 19:12:26 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "success", true): Verify element property value successfully
+
+2020-09-15 19:12:26 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2020-09-15 19:12:26 - [TEST_STEP][PASSED] - assert response.getStatusCode() == 200: null
+
+2020-09-15 19:12:26 - [MESSAGE][PASSED] - Verify response successfully
+
+2020-09-15 19:12:26 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+2020-09-15 19:12:26 - [MESSAGE][INFO] - -----> success_value = true
+
+2020-09-15 19:12:26 - [MESSAGE][PASSED] - api_Basic_Onboarding.api_basic_onboarding.pingService is PASSED
+
+2020-09-15 19:12:26 - [TEST_STEP][PASSED] - card_product_token = api_Basic_Onboarding.api_basic_onboarding.createCardProduct(start_date, name, payment_instrument, ecommerce, activate_upon_issue, atm): api_Basic_Onboarding.api_basic_onboarding.createCardProduct is PASSED
+
+2020-09-15 19:12:27 - [MESSAGE][INFO] - HAR: /Users/csmall/mq-chase/Reports/20200915_191153/Basic Test Suite/Basic_Dev_Onboarding/20200915_191153/requests/main/5.har
+
+2020-09-15 19:12:27 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+2020-09-15 19:12:27 - [TEST_STEP][PASSED] - log = new com.kms.katalon.core.logging.KeywordLogger(): null
+
+2020-09-15 19:12:27 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+2020-09-15 19:12:27 - [TEST_STEP][PASSED] - println(restUrl.toString()): null
+
+2020-09-15 19:12:27 - [TEST_STEP][PASSED] - println(httpBody.toString()): null
+
+2020-09-15 19:12:27 - [TEST_STEP][PASSED] - log.logInfo("-------> Request Url= " + restUrl.toString()): -------> Request Url= https://sandbox-api.marqeta.com/v3/cardproducts
+
+2020-09-15 19:12:27 - [MESSAGE][INFO] - -------> Request Url= https://sandbox-api.marqeta.com/v3/cardproducts
+
+2020-09-15 19:12:27 - [TEST_STEP][PASSED] - log.logInfo("-------> Request Body= " + httpBody.toString()): -------> Request Body= {
+  "start_date": "2020-09-10",
+  "name": "Example Card Product",
+  "config": {
+    "fulfillment": {
+      "payment_instrument":"VIRTUAL_PAN"
+     },
+    "poi": {
+      "ecommerce": true,
+      "atm": "true"
+    },
+    "card_life_cycle": {
+      "activate_upon_issue": true
+    }
+  }
+}
+
+2020-09-15 19:12:27 - [MESSAGE][INFO] - -------> Request Body= {
+  "start_date": "2020-09-10",
+  "name": "Example Card Product",
+  "config": {
+    "fulfillment": {
+      "payment_instrument":"VIRTUAL_PAN"
+     },
+    "poi": {
+      "ecommerce": true,
+      "atm": "true"
+    },
+    "card_life_cycle": {
+      "activate_upon_issue": true
+    }
+  }
+}
+
+2020-09-15 19:12:27 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+2020-09-15 19:12:27 - [TEST_STEP][PASSED] - println(responseBodyContent.toString()): null
+
+2020-09-15 19:12:27 - [TEST_STEP][PASSED] - log.logInfo("-------> Response Body= " + responseBodyContent.toString()): -------> Response Body= {
+  "token" : "748e6b81-8229-4799-8660-4ae2953fa8e8",
+  "name" : "Example Card Product",
+  "active" : true,
+  "start_date" : "2020-09-10",
+  "config" : {
+    "poi" : {
+      "other" : {
+        "allow" : true,
+        "card_presence_required" : false,
+        "cardholder_presence_required" : false
+      },
+      "ecommerce" : true,
+      "atm" : true
+    },
+    "transaction_controls" : {
+      "accepted_countries_token" : "accept_us_only",
+      "always_require_pin" : false,
+      "always_require_icc" : false,
+      "allow_gpa_auth" : true,
+      "require_card_not_present_card_security_code" : false,
+      "allow_mcc_group_authorization_controls" : true,
+      "allow_first_pin_set_via_financial_transaction" : false,
+      "ignore_card_suspended_state" : false,
+      "allow_chip_fallback" : true,
+      "allow_network_load" : false,
+      "allow_network_load_card_activation" : false,
+      "allow_quasi_cash" : false,
+      "enable_partial_auth_approval" : true,
+      "address_verification" : {
+        "av_messages" : {
+          "validate" : true,
+          "decline_on_address_number_mismatch" : false,
+          "decline_on_postal_code_mismatch" : true
+        },
+        "auth_messages" : {
+          "validate" : true,
+          "decline_on_address_number_mismatch" : false,
+          "decline_on_postal_code_mismatch" : false
+        }
+      }
+    },
+    "selective_auth" : {
+      "sa_mode" : 1,
+      "enable_regex_search_chain" : false,
+      "dmd_location_sensitivity" : 0
+    },
+    "special" : {
+      "merchant_on_boarding" : false
+    },
+    "card_life_cycle" : {
+      "activate_upon_issue" : true,
+      "expiration_offset" : {
+        "unit" : "YEARS",
+        "value" : 4
+      },
+      "card_service_code" : 101,
+      "update_expiration_upon_activation" : false
+    },
+    "clearing_and_settlement" : {
+      "overdraft_destination" : "GPA"
+    },
+    "jit_funding" : {
+      "paymentcard_funding_source" : {
+        "enabled" : false,
+        "refunds_destination" : ""
+      },
+      "programgateway_funding_source" : {
+        "enabled" : false,
+        "funding_source_token" : "",
+        "refunds_destination" : "",
+        "always_fund" : true
+      },
+      "program_funding_source" : {
+        "enabled" : false,
+        "funding_source_token" : "",
+        "refunds_destination" : ""
+      }
+    },
+    "digital_wallet_tokenization" : {
+      "provisioning_controls" : {
+        "manual_entry" : {
+          "enabled" : false,
+          "address_verification" : {
+            "validate" : true
+          }
+        },
+        "wallet_provider_card_on_file" : {
+          "enabled" : false,
+          "address_verification" : {
+            "validate" : true
+          }
+        },
+        "in_app_provisioning" : {
+          "enabled" : false,
+          "address_verification" : {
+            "validate" : true
+          }
+        }
+      }
+    },
+    "fulfillment" : {
+      "payment_instrument" : "VIRTUAL_PAN",
+      "package_id" : "0",
+      "all_zero_card_security_code" : false,
+      "bin_prefix" : "111111",
+      "bulk_ship" : false,
+      "pan_length" : "16",
+      "fulfillment_provider" : "PERFECTPLASTIC",
+      "allow_card_creation" : true,
+      "uppercase_name_lines" : true,
+      "enable_offline_pin" : false
+    }
+  },
+  "created_time" : "2020-09-16T00:12:27Z",
+  "last_modified_time" : "2020-09-16T00:12:27Z"
+}
+
+2020-09-15 19:12:27 - [MESSAGE][INFO] - -------> Response Body= {
+  "token" : "748e6b81-8229-4799-8660-4ae2953fa8e8",
+  "name" : "Example Card Product",
+  "active" : true,
+  "start_date" : "2020-09-10",
+  "config" : {
+    "poi" : {
+      "other" : {
+        "allow" : true,
+        "card_presence_required" : false,
+        "cardholder_presence_required" : false
+      },
+      "ecommerce" : true,
+      "atm" : true
+    },
+    "transaction_controls" : {
+      "accepted_countries_token" : "accept_us_only",
+      "always_require_pin" : false,
+      "always_require_icc" : false,
+      "allow_gpa_auth" : true,
+      "require_card_not_present_card_security_code" : false,
+      "allow_mcc_group_authorization_controls" : true,
+      "allow_first_pin_set_via_financial_transaction" : false,
+      "ignore_card_suspended_state" : false,
+      "allow_chip_fallback" : true,
+      "allow_network_load" : false,
+      "allow_network_load_card_activation" : false,
+      "allow_quasi_cash" : false,
+      "enable_partial_auth_approval" : true,
+      "address_verification" : {
+        "av_messages" : {
+          "validate" : true,
+          "decline_on_address_number_mismatch" : false,
+          "decline_on_postal_code_mismatch" : true
+        },
+        "auth_messages" : {
+          "validate" : true,
+          "decline_on_address_number_mismatch" : false,
+          "decline_on_postal_code_mismatch" : false
+        }
+      }
+    },
+    "selective_auth" : {
+      "sa_mode" : 1,
+      "enable_regex_search_chain" : false,
+      "dmd_location_sensitivity" : 0
+    },
+    "special" : {
+      "merchant_on_boarding" : false
+    },
+    "card_life_cycle" : {
+      "activate_upon_issue" : true,
+      "expiration_offset" : {
+        "unit" : "YEARS",
+        "value" : 4
+      },
+      "card_service_code" : 101,
+      "update_expiration_upon_activation" : false
+    },
+    "clearing_and_settlement" : {
+      "overdraft_destination" : "GPA"
+    },
+    "jit_funding" : {
+      "paymentcard_funding_source" : {
+        "enabled" : false,
+        "refunds_destination" : ""
+      },
+      "programgateway_funding_source" : {
+        "enabled" : false,
+        "funding_source_token" : "",
+        "refunds_destination" : "",
+        "always_fund" : true
+      },
+      "program_funding_source" : {
+        "enabled" : false,
+        "funding_source_token" : "",
+        "refunds_destination" : ""
+      }
+    },
+    "digital_wallet_tokenization" : {
+      "provisioning_controls" : {
+        "manual_entry" : {
+          "enabled" : false,
+          "address_verification" : {
+            "validate" : true
+          }
+        },
+        "wallet_provider_card_on_file" : {
+          "enabled" : false,
+          "address_verification" : {
+            "validate" : true
+          }
+        },
+        "in_app_provisioning" : {
+          "enabled" : false,
+          "address_verification" : {
+            "validate" : true
+          }
+        }
+      }
+    },
+    "fulfillment" : {
+      "payment_instrument" : "VIRTUAL_PAN",
+      "package_id" : "0",
+      "all_zero_card_security_code" : false,
+      "bin_prefix" : "111111",
+      "bulk_ship" : false,
+      "pan_length" : "16",
+      "fulfillment_provider" : "PERFECTPLASTIC",
+      "allow_card_creation" : true,
+      "uppercase_name_lines" : true,
+      "enable_offline_pin" : false
+    }
+  },
+  "created_time" : "2020-09-16T00:12:27Z",
+  "last_modified_time" : "2020-09-16T00:12:27Z"
+}
+
+2020-09-15 19:12:27 - [TEST_STEP][PASSED] - jsonSlurper = new groovy.json.JsonSlurper(): null
+
+2020-09-15 19:12:27 - [TEST_STEP][PASSED] - jsonResponse = jsonSlurper.parseText(response.getResponseText()): null
+
+2020-09-15 19:12:27 - [TEST_STEP][PASSED] - assert token != null: null
+
+2020-09-15 19:12:27 - [TEST_STEP][PASSED] - println(token): null
+
+2020-09-15 19:12:27 - [TEST_STEP][PASSED] - card_product_token = token: null
+
+2020-09-15 19:12:27 - [TEST_STEP][PASSED] - log.logInfo("-----> card_product_token = " + card_product_token): -----> card_product_token = 748e6b81-8229-4799-8660-4ae2953fa8e8
+
+2020-09-15 19:12:27 - [MESSAGE][INFO] - -----> card_product_token = 748e6b81-8229-4799-8660-4ae2953fa8e8
+
+2020-09-15 19:12:27 - [TEST_STEP][PASSED] - card_product_token = card_product_token: null
+
+2020-09-15 19:12:27 - [TEST_STEP][PASSED] - log.logInfo("----> GlobalVariable card_product_token = " + card_product_token): ----> GlobalVariable card_product_token = 748e6b81-8229-4799-8660-4ae2953fa8e8
+
+2020-09-15 19:12:27 - [MESSAGE][INFO] - ----> GlobalVariable card_product_token = 748e6b81-8229-4799-8660-4ae2953fa8e8
+
+2020-09-15 19:12:27 - [TEST_STEP][PASSED] - assert response.getStatusCode() == 201: null
+
+2020-09-15 19:12:27 - [MESSAGE][PASSED] - Verify response successfully
+
+2020-09-15 19:12:27 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+2020-09-15 19:12:27 - [MESSAGE][INFO] - -----> card_product_token = 748e6b81-8229-4799-8660-4ae2953fa8e8
+
+2020-09-15 19:12:27 - [MESSAGE][INFO] - ----> GlobalVariable card_product_token = 748e6b81-8229-4799-8660-4ae2953fa8e8
+
+2020-09-15 19:12:27 - [MESSAGE][PASSED] - api_Basic_Onboarding.api_basic_onboarding.createCardProduct is PASSED
+
+2020-09-15 19:12:27 - [TEST_STEP][PASSED] - program_token = api_Basic_Onboarding.api_basic_onboarding.createCardFundingSource(program_name): api_Basic_Onboarding.api_basic_onboarding.createCardFundingSource is PASSED
+
+2020-09-15 19:12:27 - [MESSAGE][INFO] - HAR: /Users/csmall/mq-chase/Reports/20200915_191153/Basic Test Suite/Basic_Dev_Onboarding/20200915_191153/requests/main/6.har
+
+2020-09-15 19:12:28 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+2020-09-15 19:12:28 - [TEST_STEP][PASSED] - log = new com.kms.katalon.core.logging.KeywordLogger(): null
+
+2020-09-15 19:12:28 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+2020-09-15 19:12:28 - [TEST_STEP][PASSED] - println(restUrl.toString()): null
+
+2020-09-15 19:12:28 - [TEST_STEP][PASSED] - println(httpBody.toString()): null
+
+2020-09-15 19:12:28 - [TEST_STEP][PASSED] - log.logInfo("-------> Request Url= " + restUrl.toString()): -------> Request Url= https://sandbox-api.marqeta.com/v3/fundingsources/program
+
+2020-09-15 19:12:28 - [MESSAGE][INFO] - -------> Request Url= https://sandbox-api.marqeta.com/v3/fundingsources/program
+
+2020-09-15 19:12:28 - [TEST_STEP][PASSED] - log.logInfo("-------> Request Body= " + httpBody.toString()): -------> Request Body= {
+  "name": "Program Funding"
+}
+
+2020-09-15 19:12:28 - [MESSAGE][INFO] - -------> Request Body= {
+  "name": "Program Funding"
+}
+
+2020-09-15 19:12:28 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+2020-09-15 19:12:28 - [TEST_STEP][PASSED] - println(responseBodyContent.toString()): null
+
+2020-09-15 19:12:28 - [TEST_STEP][PASSED] - log.logInfo("-------> Response Body= " + responseBodyContent.toString()): -------> Response Body= {
+  "name" : "Program Funding",
+  "active" : true,
+  "token" : "33191774-f8b0-4759-8107-b51f16989820",
+  "created_time" : "2020-09-16T00:12:27Z",
+  "last_modified_time" : "2020-09-16T00:12:27Z",
+  "account" : "12.003.001.000000"
+}
+
+2020-09-15 19:12:28 - [MESSAGE][INFO] - -------> Response Body= {
+  "name" : "Program Funding",
+  "active" : true,
+  "token" : "33191774-f8b0-4759-8107-b51f16989820",
+  "created_time" : "2020-09-16T00:12:27Z",
+  "last_modified_time" : "2020-09-16T00:12:27Z",
+  "account" : "12.003.001.000000"
+}
+
+2020-09-15 19:12:28 - [TEST_STEP][PASSED] - jsonSlurper = new groovy.json.JsonSlurper(): null
+
+2020-09-15 19:12:28 - [TEST_STEP][PASSED] - jsonResponse = jsonSlurper.parseText(response.getResponseText()): null
+
+2020-09-15 19:12:28 - [TEST_STEP][PASSED] - assert token != null: null
+
+2020-09-15 19:12:28 - [TEST_STEP][PASSED] - println(token): null
+
+2020-09-15 19:12:28 - [TEST_STEP][PASSED] - funding_token = token: null
+
+2020-09-15 19:12:28 - [TEST_STEP][PASSED] - log.logInfo("-----> funding_token = " + funding_token): -----> funding_token = 33191774-f8b0-4759-8107-b51f16989820
+
+2020-09-15 19:12:28 - [MESSAGE][INFO] - -----> funding_token = 33191774-f8b0-4759-8107-b51f16989820
+
+2020-09-15 19:12:28 - [TEST_STEP][PASSED] - funding_token = funding_token: null
+
+2020-09-15 19:12:28 - [TEST_STEP][PASSED] - log.logInfo("----> GlobalVariable funding_token = " + funding_token): ----> GlobalVariable funding_token = 33191774-f8b0-4759-8107-b51f16989820
+
+2020-09-15 19:12:28 - [MESSAGE][INFO] - ----> GlobalVariable funding_token = 33191774-f8b0-4759-8107-b51f16989820
+
+2020-09-15 19:12:28 - [TEST_STEP][PASSED] - assert response.getStatusCode() == 201: null
+
+2020-09-15 19:12:28 - [MESSAGE][PASSED] - Verify response successfully
+
+2020-09-15 19:12:28 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+2020-09-15 19:12:28 - [MESSAGE][INFO] - -----> funding_token = 33191774-f8b0-4759-8107-b51f16989820
+
+2020-09-15 19:12:28 - [MESSAGE][INFO] - ----> GlobalVariable card_product_token = 33191774-f8b0-4759-8107-b51f16989820
+
+2020-09-15 19:12:28 - [MESSAGE][PASSED] - api_Basic_Onboarding.api_basic_onboarding.createCardFundingSource is PASSED
+
+2020-09-15 19:12:28 - [TEST_STEP][PASSED] - user_token = api_Basic_Onboarding.api_basic_onboarding.createUser(first_name, last_name, active): api_Basic_Onboarding.api_basic_onboarding.createUser is PASSED
+
+2020-09-15 19:12:28 - [MESSAGE][INFO] - HAR: /Users/csmall/mq-chase/Reports/20200915_191153/Basic Test Suite/Basic_Dev_Onboarding/20200915_191153/requests/main/7.har
+
+2020-09-15 19:12:28 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+2020-09-15 19:12:28 - [TEST_STEP][PASSED] - log = new com.kms.katalon.core.logging.KeywordLogger(): null
+
+2020-09-15 19:12:28 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+2020-09-15 19:12:28 - [TEST_STEP][PASSED] - println(restUrl.toString()): null
+
+2020-09-15 19:12:28 - [TEST_STEP][PASSED] - println(httpBody.toString()): null
+
+2020-09-15 19:12:28 - [TEST_STEP][PASSED] - log.logInfo("-------> Request Url= " + restUrl.toString()): -------> Request Url= https://sandbox-api.marqeta.com/v3/users
+
+2020-09-15 19:12:28 - [MESSAGE][INFO] - -------> Request Url= https://sandbox-api.marqeta.com/v3/users
+
+2020-09-15 19:12:28 - [TEST_STEP][PASSED] - log.logInfo("-------> Request Body= " + httpBody.toString()): -------> Request Body= {
+    "first_name": "Chaseuser",
+    "last_name": "Smalluser",
+    "active": true
+}
+
+2020-09-15 19:12:28 - [MESSAGE][INFO] - -------> Request Body= {
+    "first_name": "Chaseuser",
+    "last_name": "Smalluser",
+    "active": true
+}
+
+2020-09-15 19:12:28 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+2020-09-15 19:12:28 - [TEST_STEP][PASSED] - println(responseBodyContent.toString()): null
+
+2020-09-15 19:12:28 - [TEST_STEP][PASSED] - log.logInfo("-------> Response Body= " + responseBodyContent.toString()): -------> Response Body= {
+  "token" : "7ef862bf-3981-42b1-94b3-78c88bb07251",
+  "active" : true,
+  "first_name" : "Chaseuser",
+  "last_name" : "Smalluser",
+  "uses_parent_account" : false,
+  "corporate_card_holder" : false,
+  "created_time" : "2020-09-16T00:12:28Z",
+  "last_modified_time" : "2020-09-16T00:12:28Z",
+  "metadata" : { },
+  "account_holder_group_token" : "DEFAULT_AHG",
+  "status" : "ACTIVE",
+  "deposit_account" : {
+    "token" : "af048e24-7e94-4307-85b3-ba73dc356dc6",
+    "account_number" : "40013372031116969",
+    "routing_number" : "293748000",
+    "allow_immediate_credit" : false
+  }
+}
+
+2020-09-15 19:12:28 - [MESSAGE][INFO] - -------> Response Body= {
+  "token" : "7ef862bf-3981-42b1-94b3-78c88bb07251",
+  "active" : true,
+  "first_name" : "Chaseuser",
+  "last_name" : "Smalluser",
+  "uses_parent_account" : false,
+  "corporate_card_holder" : false,
+  "created_time" : "2020-09-16T00:12:28Z",
+  "last_modified_time" : "2020-09-16T00:12:28Z",
+  "metadata" : { },
+  "account_holder_group_token" : "DEFAULT_AHG",
+  "status" : "ACTIVE",
+  "deposit_account" : {
+    "token" : "af048e24-7e94-4307-85b3-ba73dc356dc6",
+    "account_number" : "40013372031116969",
+    "routing_number" : "293748000",
+    "allow_immediate_credit" : false
+  }
+}
+
+2020-09-15 19:12:28 - [TEST_STEP][PASSED] - jsonSlurper = new groovy.json.JsonSlurper(): null
+
+2020-09-15 19:12:28 - [TEST_STEP][PASSED] - jsonResponse = jsonSlurper.parseText(response.getResponseText()): null
+
+2020-09-15 19:12:28 - [TEST_STEP][PASSED] - assert token != null: null
+
+2020-09-15 19:12:28 - [TEST_STEP][PASSED] - println(token): null
+
+2020-09-15 19:12:28 - [TEST_STEP][PASSED] - user_token = token: null
+
+2020-09-15 19:12:28 - [TEST_STEP][PASSED] - log.logInfo("-----> user_token = " + user_token): -----> user_token = 7ef862bf-3981-42b1-94b3-78c88bb07251
+
+2020-09-15 19:12:28 - [MESSAGE][INFO] - -----> user_token = 7ef862bf-3981-42b1-94b3-78c88bb07251
+
+2020-09-15 19:12:28 - [TEST_STEP][PASSED] - user_token = user_token: null
+
+2020-09-15 19:12:28 - [TEST_STEP][PASSED] - log.logInfo("----> GlobalVariable user_token = " + user_token): ----> GlobalVariable user_token = 7ef862bf-3981-42b1-94b3-78c88bb07251
+
+2020-09-15 19:12:28 - [MESSAGE][INFO] - ----> GlobalVariable user_token = 7ef862bf-3981-42b1-94b3-78c88bb07251
+
+2020-09-15 19:12:28 - [TEST_STEP][PASSED] - assert response.getStatusCode() == 201: null
+
+2020-09-15 19:12:28 - [MESSAGE][PASSED] - Verify response successfully
+
+2020-09-15 19:12:28 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+2020-09-15 19:12:28 - [MESSAGE][INFO] - -----> user_token = 7ef862bf-3981-42b1-94b3-78c88bb07251
+
+2020-09-15 19:12:28 - [MESSAGE][INFO] - ----> GlobalVariable user_token = 7ef862bf-3981-42b1-94b3-78c88bb07251
+
+2020-09-15 19:12:28 - [MESSAGE][PASSED] - api_Basic_Onboarding.api_basic_onboarding.createUser is PASSED
+
+2020-09-15 19:12:28 - [TEST_STEP][PASSED] - card_token = api_Basic_Onboarding.api_basic_onboarding.createCard(user_token, card_product_token): api_Basic_Onboarding.api_basic_onboarding.createCard is PASSED
+
+2020-09-15 19:12:29 - [MESSAGE][INFO] - HAR: /Users/csmall/mq-chase/Reports/20200915_191153/Basic Test Suite/Basic_Dev_Onboarding/20200915_191153/requests/main/8.har
+
+2020-09-15 19:12:29 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+2020-09-15 19:12:29 - [TEST_STEP][PASSED] - log = new com.kms.katalon.core.logging.KeywordLogger(): null
+
+2020-09-15 19:12:29 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+2020-09-15 19:12:29 - [TEST_STEP][PASSED] - println(restUrl.toString()): null
+
+2020-09-15 19:12:29 - [TEST_STEP][PASSED] - println(httpBody.toString()): null
+
+2020-09-15 19:12:29 - [TEST_STEP][PASSED] - log.logInfo("-------> Request Url= " + restUrl.toString()): -------> Request Url= https://sandbox-api.marqeta.com/v3/cards
+
+2020-09-15 19:12:29 - [MESSAGE][INFO] - -------> Request Url= https://sandbox-api.marqeta.com/v3/cards
+
+2020-09-15 19:12:29 - [TEST_STEP][PASSED] - log.logInfo("-------> Request Body= " + httpBody.toString()): -------> Request Body= {
+  "user_token": "7ef862bf-3981-42b1-94b3-78c88bb07251",
+  "card_product_token": "748e6b81-8229-4799-8660-4ae2953fa8e8"
+}
+
+2020-09-15 19:12:29 - [MESSAGE][INFO] - -------> Request Body= {
+  "user_token": "7ef862bf-3981-42b1-94b3-78c88bb07251",
+  "card_product_token": "748e6b81-8229-4799-8660-4ae2953fa8e8"
+}
+
+2020-09-15 19:12:29 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+2020-09-15 19:12:29 - [TEST_STEP][PASSED] - println(responseBodyContent.toString()): null
+
+2020-09-15 19:12:29 - [TEST_STEP][PASSED] - log.logInfo("-------> Response Body= " + responseBodyContent.toString()): -------> Response Body= {
+  "created_time" : "2020-09-16T00:12:29Z",
+  "last_modified_time" : "2020-09-16T00:12:29Z",
+  "token" : "d3ea30eb-69b0-42fb-84c4-e4088778e53e",
+  "user_token" : "7ef862bf-3981-42b1-94b3-78c88bb07251",
+  "card_product_token" : "748e6b81-8229-4799-8660-4ae2953fa8e8",
+  "last_four" : "4185",
+  "pan" : "111111______4185",
+  "expiration" : "0924",
+  "expiration_time" : "2024-09-30T23:59:59Z",
+  "barcode" : "30085133686174230059",
+  "pin_is_set" : false,
+  "state" : "ACTIVE",
+  "state_reason" : "New card activated",
+  "fulfillment_status" : "ISSUED",
+  "instrument_type" : "VIRTUAL_PAN",
+  "expedite" : false,
+  "metadata" : { }
+}
+
+2020-09-15 19:12:29 - [MESSAGE][INFO] - -------> Response Body= {
+  "created_time" : "2020-09-16T00:12:29Z",
+  "last_modified_time" : "2020-09-16T00:12:29Z",
+  "token" : "d3ea30eb-69b0-42fb-84c4-e4088778e53e",
+  "user_token" : "7ef862bf-3981-42b1-94b3-78c88bb07251",
+  "card_product_token" : "748e6b81-8229-4799-8660-4ae2953fa8e8",
+  "last_four" : "4185",
+  "pan" : "111111______4185",
+  "expiration" : "0924",
+  "expiration_time" : "2024-09-30T23:59:59Z",
+  "barcode" : "30085133686174230059",
+  "pin_is_set" : false,
+  "state" : "ACTIVE",
+  "state_reason" : "New card activated",
+  "fulfillment_status" : "ISSUED",
+  "instrument_type" : "VIRTUAL_PAN",
+  "expedite" : false,
+  "metadata" : { }
+}
+
+2020-09-15 19:12:29 - [TEST_STEP][PASSED] - jsonSlurper = new groovy.json.JsonSlurper(): null
+
+2020-09-15 19:12:29 - [TEST_STEP][PASSED] - jsonResponse = jsonSlurper.parseText(response.getResponseText()): null
+
+2020-09-15 19:12:29 - [TEST_STEP][PASSED] - assert token != null: null
+
+2020-09-15 19:12:29 - [TEST_STEP][PASSED] - println(token): null
+
+2020-09-15 19:12:29 - [TEST_STEP][PASSED] - card_token = token: null
+
+2020-09-15 19:12:29 - [TEST_STEP][PASSED] - log.logInfo("-----> card_token = " + card_token): -----> card_token = d3ea30eb-69b0-42fb-84c4-e4088778e53e
+
+2020-09-15 19:12:29 - [MESSAGE][INFO] - -----> card_token = d3ea30eb-69b0-42fb-84c4-e4088778e53e
+
+2020-09-15 19:12:29 - [TEST_STEP][PASSED] - card_token = card_token: null
+
+2020-09-15 19:12:29 - [TEST_STEP][PASSED] - log.logInfo("----> GlobalVariable card_token = " + card_token): ----> GlobalVariable card_token = d3ea30eb-69b0-42fb-84c4-e4088778e53e
+
+2020-09-15 19:12:29 - [MESSAGE][INFO] - ----> GlobalVariable card_token = d3ea30eb-69b0-42fb-84c4-e4088778e53e
+
+2020-09-15 19:12:29 - [TEST_STEP][PASSED] - assert response.getStatusCode() == 201: null
+
+2020-09-15 19:12:29 - [MESSAGE][PASSED] - Verify response successfully
+
+2020-09-15 19:12:29 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+2020-09-15 19:12:29 - [MESSAGE][INFO] - -----> card_token = d3ea30eb-69b0-42fb-84c4-e4088778e53e
+
+2020-09-15 19:12:29 - [MESSAGE][INFO] - ----> GlobalVariable card_token = d3ea30eb-69b0-42fb-84c4-e4088778e53e
+
+2020-09-15 19:12:29 - [MESSAGE][PASSED] - api_Basic_Onboarding.api_basic_onboarding.createCard is PASSED]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2020-09-15 19:12:20 - [TEST_SUITE][PASSED] - Basic_Dev_Onboarding: Test Cases/API Test Cases/Basic_Quickstart_Test_Case/Dev Onboarding]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

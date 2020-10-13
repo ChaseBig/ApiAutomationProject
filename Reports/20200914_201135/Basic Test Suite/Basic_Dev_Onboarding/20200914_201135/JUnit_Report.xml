@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Basic_Dev_Onboarding" time="0.431" tests="1" failures="0" errors="1">
+   <testsuite name="Basic_Dev_Onboarding" tests="1" failures="0" errors="1" time="0.431" timestamp="2020-09-14 20:11:40" hostname="csmall - csmall-mbp" id="Test Suites/Basic Test Suite/Basic_Dev_Onboarding">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="/Users/csmall/mq-chase/Reports/20200914_201135/Basic Test Suite/Basic_Dev_Onboarding/20200914_201135"/>
+         <property name="logFiles" value="/Users/csmall/mq-chase/Reports/20200914_201135/Basic Test Suite/Basic_Dev_Onboarding/20200914_201135/execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="csmall - csmall-mbp"/>
+         <property name="hostAddress" value="192.168.1.45"/>
+         <property name="os" value="Mac OS X 64bit"/>
+         <property name="katalonVersion" value="null.null"/>
+      </properties>
+      <testcase name="Test Cases/API Test Cases/Basic_Onboarding" time="0.248" classname="Test Cases/API Test Cases/Basic_Onboarding" status="ERROR">
+         <error type="ERROR" message="Test Cases/API Test Cases/Basic_Onboarding FAILED.
+Reason:
+groovy.lang.MissingPropertyException: No such property: start_date for class: Script1600126095013
+	at Basic_Onboarding.run(Basic_Onboarding:19)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:339)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:330)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:309)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:235)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:141)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:90)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1600132295918.run(TempTestSuite1600132295918.groovy:39)
+"/>
+         <system-out><![CDATA[2020-09-14 20:11:40 - [TEST_CASE][ERROR] - Test Cases/API Test Cases/Basic_Onboarding: Test Cases/API Test Cases/Basic_Onboarding FAILED.
+Reason:
+groovy.lang.MissingPropertyException: No such property: start_date for class: Script1600126095013
+	at Basic_Onboarding.run(Basic_Onboarding:19)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:339)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:330)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:309)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:235)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:141)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:90)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1600132295918.run(TempTestSuite1600132295918.groovy:39)
+
+
+2020-09-14 20:11:40 - [TEST_STEP][PASSED] - card_product_token = api_Basic_Onboarding.api_basic_onboarding.createCardProduct(start_date, name, payment_instrument, ecommerce, activate_upon_issue, atm): null]]></system-out>
+         <system-err><![CDATA[2020-09-14 20:11:40 - [TEST_CASE][ERROR] - Test Cases/API Test Cases/Basic_Onboarding: Test Cases/API Test Cases/Basic_Onboarding FAILED.
+Reason:
+groovy.lang.MissingPropertyException: No such property: start_date for class: Script1600126095013
+	at Basic_Onboarding.run(Basic_Onboarding:19)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:339)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:330)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:309)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:235)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:141)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:90)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1600132295918.run(TempTestSuite1600132295918.groovy:39)]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2020-09-14 20:11:40 - [TEST_SUITE][ERROR] - Basic_Dev_Onboarding: Test Cases/API Test Cases/Basic_Onboarding FAILED.
+Reason:
+groovy.lang.MissingPropertyException: No such property: start_date for class: Script1600126095013
+	at Basic_Onboarding.run(Basic_Onboarding:19)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:339)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:330)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:309)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:235)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:141)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:90)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1600132295918.run(TempTestSuite1600132295918.groovy:39)]]></system-out>
+      <system-err><![CDATA[2020-09-14 20:11:40 - [TEST_SUITE][ERROR] - Basic_Dev_Onboarding: Test Cases/API Test Cases/Basic_Onboarding FAILED.
+Reason:
+groovy.lang.MissingPropertyException: No such property: start_date for class: Script1600126095013
+	at Basic_Onboarding.run(Basic_Onboarding:19)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:339)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:330)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:309)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:235)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:141)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:90)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1600132295918.run(TempTestSuite1600132295918.groovy:39)]]></system-err>
+   </testsuite>
+</testsuites>

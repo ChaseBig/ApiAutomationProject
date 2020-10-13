@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebServiceRequestEntity>
+   <description></description>
+   <name>update user email</name>
+   <tag></tag>
+   <elementGuidId>83428ca8-6cb8-43d1-88c7-e66f8c3a18a4</elementGuidId>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <connectionTimeout>-1</connectionTimeout>
+   <followRedirects>false</followRedirects>
+   <httpBody></httpBody>
+   <httpBodyContent>{
+  &quot;text&quot;: &quot;{\n    \&quot;first_name\&quot;: \&quot;${first_name}\&quot;,\n    \&quot;last_name\&quot;: \&quot;${last_name}\&quot;,\n    \&quot;active\&quot;: ${active},\n    \&quot;email\&quot;: \&quot;${email}\&quot;\n}&quot;,
+  &quot;contentType&quot;: &quot;text/plain&quot;,
+  &quot;charset&quot;: &quot;UTF-8&quot;
+}</httpBodyContent>
+   <httpBodyType>text</httpBodyType>
+   <httpHeaderProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>Authorization</name>
+      <type>Main</type>
+      <value>Basic NmI4MGEzODMtNTZhYi00ZjRkLWFkYzItYTk1ZDFiNzVlODgxOjZlMGUzMTQ3LTljZWEtNDIwNS1hOWUzLTUyMDBiZGZjMTM4Zg==</value>
+   </httpHeaderProperties>
+   <httpHeaderProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>Content-type</name>
+      <type>Main</type>
+      <value>application/json</value>
+   </httpHeaderProperties>
+   <maxResponseSize>-1</maxResponseSize>
+   <migratedVersion>5.4.1</migratedVersion>
+   <restRequestMethod>PUT</restRequestMethod>
+   <restUrl>https://${url}/users/${token}</restUrl>
+   <serviceType>RESTful</serviceType>
+   <soapBody></soapBody>
+   <soapHeader></soapHeader>
+   <soapRequestMethod></soapRequestMethod>
+   <soapServiceEndpoint></soapServiceEndpoint>
+   <soapServiceFunction></soapServiceFunction>
+   <socketTimeout>-1</socketTimeout>
+   <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
+   <variables>
+      <defaultValue>GlobalVariable.url</defaultValue>
+      <description></description>
+      <id>7a278dab-59df-4ba7-9b9e-74950acce109</id>
+      <masked>false</masked>
+      <name>url</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.token</defaultValue>
+      <description></description>
+      <id>738da348-c96a-4c86-a62d-dc53543557a8</id>
+      <masked>false</masked>
+      <name>token</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.first_name</defaultValue>
+      <description></description>
+      <id>6808269c-0b30-4a24-b25b-95168b197e3c</id>
+      <masked>false</masked>
+      <name>first_name</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.last_name</defaultValue>
+      <description></description>
+      <id>1d38f0f8-72a4-4790-bbd3-ce54ffe7eae4</id>
+      <masked>false</masked>
+      <name>last_name</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.active</defaultValue>
+      <description></description>
+      <id>bd2f6336-2b50-48cf-b1c2-2b00aa7791f9</id>
+      <masked>false</masked>
+      <name>active</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.email</defaultValue>
+      <description></description>
+      <id>e4e0bcab-973c-428b-9481-bec884900391</id>
+      <masked>false</masked>
+      <name>email</name>
+   </variables>
+   <wsdlAddress></wsdlAddress>
+</WebServiceRequestEntity>

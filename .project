@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>%Users%csmall%mq-chase%mq-Automation.prj</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>org.eclipse.jdt.core.javabuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>org.eclipse.jdt.groovy.core.groovyNature</nature>
+		<nature>org.eclipse.jdt.core.javanature</nature>
+	</natures>
+	<linkedResources>
+		<link>
+			<name>kat-3830958607645702123.groovy</name>
+			<type>1</type>
+			<location>/var/folders/7w/4sgm67v15656fcfvt5x_l9b40000gp/T/Katalon/Web Services/kat-3830958607645702123.groovy</location>
+		</link>
+		<link>
+			<name>kat-5859841473345531224.groovy</name>
+			<type>1</type>
+			<location>/var/folders/7w/4sgm67v15656fcfvt5x_l9b40000gp/T/Katalon/Web Services/kat-5859841473345531224.groovy</location>
+		</link>
+		<link>
+			<name>kat-6941890308467635045.groovy</name>
+			<type>1</type>
+			<location>/var/folders/7w/4sgm67v15656fcfvt5x_l9b40000gp/T/Katalon/Web Services/kat-6941890308467635045.groovy</location>
+		</link>
+	</linkedResources>
+	<filteredResources>
+		<filter>
+			<id>1600132208922</id>
+			<name></name>
+			<type>10</type>
+			<matcher>
+				<id>org.eclipse.core.resources.regexFilterMatcher</id>
+				<arguments>.*\.svn$</arguments>
+			</matcher>
+		</filter>
+		<filter>
+			<id>1600132208925</id>
+			<name></name>
+			<type>6</type>
+			<matcher>
+				<id>org.eclipse.core.resources.regexFilterMatcher</id>
+				<arguments>(.*\.svn-base$)|(.*\.png$)|(.*\.log$)|(.*\.xlsx$)|(.*\.xls$)|(.*\.csv$)|(.*\.txt$)</arguments>
+			</matcher>
+		</filter>
+		<filter>
+			<id>1602605468390</id>
+			<name></name>
+			<type>10</type>
+			<matcher>
+				<id>org.eclipse.core.resources.regexFilterMatcher</id>
+				<arguments>.*\.svn$</arguments>
+			</matcher>
+		</filter>
+		<filter>
+			<id>1602605468392</id>
+			<name></name>
+			<type>6</type>
+			<matcher>
+				<id>org.eclipse.core.resources.regexFilterMatcher</id>
+				<arguments>(.*\.svn-base$)|(.*\.png$)|(.*\.log$)|(.*\.xlsx$)|(.*\.xls$)|(.*\.csv$)|(.*\.txt$)</arguments>
+			</matcher>
+		</filter>
+	</filteredResources>
+</projectDescription>

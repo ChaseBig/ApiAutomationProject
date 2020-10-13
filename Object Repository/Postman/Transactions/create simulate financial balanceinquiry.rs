@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebServiceRequestEntity>
+   <description></description>
+   <name>create simulate financial balanceinquiry</name>
+   <tag></tag>
+   <elementGuidId>da156816-712f-4989-ae93-7a084114ee28</elementGuidId>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <connectionTimeout>-1</connectionTimeout>
+   <followRedirects>false</followRedirects>
+   <httpBody></httpBody>
+   <httpBodyContent>{
+  &quot;text&quot;: &quot;{\n  \&quot;card_token\&quot;: \&quot;${card_token}\&quot;,\n  \&quot;mid\&quot;: \&quot;${mid}\&quot;,\n  \&quot;account_type\&quot;: \&quot;${account_type}\&quot;,\n  \&quot;webhook\&quot;: {\n    \&quot;endpoint\&quot;: \&quot;https://create-transaction.free.beeceptor.com/create-financial-balance-inquiry\&quot;,\n    \&quot;username\&quot;: \&quot;chase.small@outlook.com\&quot;,\n    \&quot;password\&quot;: \&quot;Shredder1991!\&quot;\n  }\n}&quot;,
+  &quot;contentType&quot;: &quot;text/plain&quot;,
+  &quot;charset&quot;: &quot;UTF-8&quot;
+}</httpBodyContent>
+   <httpBodyType>text</httpBodyType>
+   <httpHeaderProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>Authorization</name>
+      <type>Main</type>
+      <value>Basic NmI4MGEzODMtNTZhYi00ZjRkLWFkYzItYTk1ZDFiNzVlODgxOjZlMGUzMTQ3LTljZWEtNDIwNS1hOWUzLTUyMDBiZGZjMTM4Zg==</value>
+   </httpHeaderProperties>
+   <httpHeaderProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>Content-type</name>
+      <type>Main</type>
+      <value>application/json</value>
+   </httpHeaderProperties>
+   <maxResponseSize>-1</maxResponseSize>
+   <migratedVersion>5.4.1</migratedVersion>
+   <restRequestMethod>POST</restRequestMethod>
+   <restUrl>https://${url}/simulate/financial/balanceinquiry</restUrl>
+   <serviceType>RESTful</serviceType>
+   <soapBody></soapBody>
+   <soapHeader></soapHeader>
+   <soapRequestMethod></soapRequestMethod>
+   <soapServiceEndpoint></soapServiceEndpoint>
+   <soapServiceFunction></soapServiceFunction>
+   <socketTimeout>-1</socketTimeout>
+   <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
+   <variables>
+      <defaultValue>GlobalVariable.url</defaultValue>
+      <description></description>
+      <id>00c20405-d8a6-4745-aa90-2d1dbe3961a1</id>
+      <masked>false</masked>
+      <name>url</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.card_token</defaultValue>
+      <description></description>
+      <id>d9df8ff9-50fc-4da2-8b6a-15b246267038</id>
+      <masked>false</masked>
+      <name>card_token</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.mid</defaultValue>
+      <description></description>
+      <id>03bb02aa-9c1c-4494-9adf-a944911c487c</id>
+      <masked>false</masked>
+      <name>mid</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.account_type</defaultValue>
+      <description></description>
+      <id>0423099c-5bcd-44a8-8a19-33693ac96632</id>
+      <masked>false</masked>
+      <name>account_type</name>
+   </variables>
+   <wsdlAddress></wsdlAddress>
+</WebServiceRequestEntity>

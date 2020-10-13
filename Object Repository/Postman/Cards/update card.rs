@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebServiceRequestEntity>
+   <description></description>
+   <name>update card</name>
+   <tag></tag>
+   <elementGuidId>69ee5ff6-22de-40c0-9bd4-523a3c1039e9</elementGuidId>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <connectionTimeout>-1</connectionTimeout>
+   <followRedirects>false</followRedirects>
+   <httpBody></httpBody>
+   <httpBodyContent>{
+  &quot;text&quot;: &quot;{\n  \&quot;user_token\&quot;: \&quot;${user_token}\&quot;,\n  \&quot;metadata\&quot;: {\n    \&quot;additionalProp1\&quot;: \&quot;${additionalProp1}\&quot;,\n    \&quot;additionalProp2\&quot;: \&quot;${additionalProp2}\&quot;\n  }\n}&quot;,
+  &quot;contentType&quot;: &quot;text/plain&quot;,
+  &quot;charset&quot;: &quot;UTF-8&quot;
+}</httpBodyContent>
+   <httpBodyType>text</httpBodyType>
+   <httpHeaderProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>Authorization</name>
+      <type>Main</type>
+      <value>Basic NmI4MGEzODMtNTZhYi00ZjRkLWFkYzItYTk1ZDFiNzVlODgxOjZlMGUzMTQ3LTljZWEtNDIwNS1hOWUzLTUyMDBiZGZjMTM4Zg==</value>
+   </httpHeaderProperties>
+   <httpHeaderProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>Content-type</name>
+      <type>Main</type>
+      <value>application/json</value>
+   </httpHeaderProperties>
+   <maxResponseSize>-1</maxResponseSize>
+   <migratedVersion>5.4.1</migratedVersion>
+   <restRequestMethod>PUT</restRequestMethod>
+   <restUrl>https://${url}/cards/${token}</restUrl>
+   <serviceType>RESTful</serviceType>
+   <soapBody></soapBody>
+   <soapHeader></soapHeader>
+   <soapRequestMethod></soapRequestMethod>
+   <soapServiceEndpoint></soapServiceEndpoint>
+   <soapServiceFunction></soapServiceFunction>
+   <socketTimeout>-1</socketTimeout>
+   <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
+   <variables>
+      <defaultValue>GlobalVariable.url</defaultValue>
+      <description></description>
+      <id>f5fe7658-3d5e-439b-9495-1a62bddc68bd</id>
+      <masked>false</masked>
+      <name>url</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.token</defaultValue>
+      <description></description>
+      <id>0b2f490e-e253-45fa-ab9b-5dddb45a974f</id>
+      <masked>false</masked>
+      <name>token</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.user_token</defaultValue>
+      <description></description>
+      <id>98d2bcc3-01db-4315-9f1b-d612c79b623f</id>
+      <masked>false</masked>
+      <name>user_token</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.additionalProp1</defaultValue>
+      <description></description>
+      <id>06ab3863-57bf-49d0-86ed-4c085cc3d2a7</id>
+      <masked>false</masked>
+      <name>additionalProp1</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.additionalProp2</defaultValue>
+      <description></description>
+      <id>19447aad-12d6-45d1-bf73-f1e42d7a4ff1</id>
+      <masked>false</masked>
+      <name>additionalProp2</name>
+   </variables>
+   <wsdlAddress></wsdlAddress>
+</WebServiceRequestEntity>
